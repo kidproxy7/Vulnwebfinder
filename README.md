@@ -27,7 +27,5 @@ python3 Buvulnweb.py
  
 
 
-![XSS_GET](https://user-images.githubusercontent.com/46041727/81505271-b127b100-92f6-11ea-8072-de29941b821f.PNG)
-
 
 
