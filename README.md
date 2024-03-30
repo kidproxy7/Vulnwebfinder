@@ -1,6 +1,5 @@
-![Untitled-hhhhhh](https://user-images.githubusercontent.com/46041727/85945410-2eaa8d80-b946-11ea-8c51-68c41235bf3a.png)
 <hr></hr>
-<h1 align="center">BlackDir-Framework</h1>
+<h1 align="center">Buvulnweb-Framework</h1>
  <p>[1] Spider Directories<br></p>
  <p>[2] Find Sub Domain<br></p>
   <p>[3] Advanced Dorks Search </p>
@@ -20,10 +19,10 @@ apt install python3-pip
 
 <h1>Installation:</h1>
 <pre>
-git clone https://github.com/RedVirus0/BlackDir-Framework.git
-cd BlackDir
+git clone https://github.com/RedVirus0/Buvulnweb-Framework.git
+cd Buvulnweb
 pip3 install -r requirements.txt
-python3 BlackDir.py
+python3 Buvulnweb.py
 </pre>
  
 
@@ -41,5 +40,3 @@ python3 BlackDir.py
 
 
 
-# Version:
-<b><p>2.8</p></b>
