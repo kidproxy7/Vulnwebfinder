@@ -26,15 +26,6 @@ python3 Buvulnweb.py
 </pre>
  
 
-![banner](https://user-images.githubusercontent.com/46041727/80273365-1c0fa000-86da-11ea-9f34-14a1d699ab25.PNG)
-
-
-
-![help](https://user-images.githubusercontent.com/46041727/80273393-50835c00-86da-11ea-95e1-43b5bf43db5d.PNG)
-
-
-![xss_POST](https://user-images.githubusercontent.com/46041727/81505255-95240f80-92f6-11ea-900d-54e4be5c6bf9.PNG)
-
 
 ![XSS_GET](https://user-images.githubusercontent.com/46041727/81505271-b127b100-92f6-11ea-8072-de29941b821f.PNG)
 
