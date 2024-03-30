@@ -51,20 +51,8 @@ except:
     exit()
 
 
-def logo():
     print("""
-\x1b[34m
-  ____  _            _    _____  _        ______                                           _    
- |  _ \| |          | |  |  __ \(_)      |  ____|                                         | |   
- | |_) | | __ _  ___| | _| |  | |_ _ __  | |__ _ __ __ _ _ __ ___   _____      _____  _ __| | __
- |  _ <| |/ _` |/ __| |/ / |  | | | '__| |  __| '__/ _` | '_ ` _ \ / _ \ \ /\ / / _ \| '__| |/ /
- | |_) | | (_| | (__|   <| |__| | | |    | |  | | | (_| | | | | | |  __/\ V  V / (_) | |  |   < 
- |____/|_|\__,_|\___|_|\_\_____/|_|_|    |_|  |_|  \__,_|_| |_| |_|\___| \_/\_/ \___/|_|  |_|\_\ version:2.8
 
- -----------------------------------------------------------------------------------------------------------
-    The Programmer of this tool is not irresponsible about any damage Or leak induced by the user
- -----------------------------------------------------------------------------------------------------------
- 
 help: python3 buvulnweb.py -h
                                                                                                                 
 """)
@@ -759,20 +747,7 @@ ex:
 python3 buvulnweb.py --spider http://google.com
 python3 buvulnweb.py --dork inurl:admin/login.php --country sa --text product
 python3 buvulnweb.py --xss "paste url here"
-python3 buvulnweb.py --sql "paste url here"
 python3 buvulnweb.py --subdomain google.com
-python3 buvulnweb.py --RevIP [ip address of server]
-python3 buvulnweb.py --word redvirus --type md4
-python3 buvulnweb.py --word redvirus --type md5
-python3 buvulnweb.py --word redvirus --type sha1
-python3 buvulnweb.py --word redvirus --type sha256
-python3 buvulnweb.py --word redvirus --type sha512
-python3 buvulnweb.py --hash_type 5f4dcc3b5aa765d61d8327deb882cf99
-python3 buvulnweb.py --wordpress http://ebase.com/
-python3 buvulnweb.py --wordpress http://ebase.com/ --ListUsername /root/Desktop/users.txt --ListPassowrd /root/Desktop/pass.txt
-python3 buvulnweb.py --wordpress http://ebase.com/ --ListUsername /root/Desktop/users.txt 
-python3 buvulnweb.py --wordpress http://ebase.com/ --ListPassword /root/Desktop/pass.txt
-python3 buvulnweb.py --wordpress https://everythingrevelstoke.com --enum use
 
 
 
@@ -857,4 +832,4 @@ elif sql_inection == None and scanner == None and url == None and dork == None a
 elif sql_inection == None and scanner == None and url == None and dork == None and subdomains == None and list_dork == None and updates == None and ip == None and portscan == None and html == None and hash_type == None and user_word == None and hash_ide == None and url_wordpress !=None:
     wordpress(url_wordpress,usernames,passwords,enumx)
 else:
-    logo()
+    ()
