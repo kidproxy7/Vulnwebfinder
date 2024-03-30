@@ -51,9 +51,12 @@ except:
     exit()
 
 
+def logo():
     print("""
+\x1b[34m
 
-help: python3 buvulnweb.py -h
+ 
+help: python3 BlackDir.py -h
                                                                                                                 
 """)
 
@@ -577,7 +580,7 @@ def scanports(ip):
 
 def update():
     os.system(
-        "cd .. && rm -rf buvulnweb-Framework-New && mkdir buvulnweb-Framework-New && cd buvulnweb-Framework-New && git clone https://github.com/RedVirus0/buvulnweb-Framework.git && echo 'New Directory >> ' && pwd")
+        "cd .. && rm -rf BlackDir-Framework-New && mkdir BlackDir-Framework-New && cd BlackDir-Framework-New && git clone https://github.com/RedVirus0/BlackDir-Framework.git && echo 'New Directory >> ' && pwd")
 
 def hash_en(word,hash_type):
     word = word.strip()
@@ -729,25 +732,12 @@ parser = argparse.ArgumentParser("""
 --text              : Dump site text if in site
 --subdomain         : find SubDomain of site
 --xss               : Scan Site if vulnerable [Xss] url must be between double citation
---sql               : Scan Site if vulnerable [Sql] url must be between double citation
---HTMLinj           : Scan site if vulnerable [html injection] url must be between double citation
---listDork          : Scan list Dorks if Vulnerable [Sql]
---RevIP             : Dump all site by ip
---port              : Scan ports by ip
---update            : Update Tool ex: --update check
---word              : word you want encrypt
---type              : select hash type like:md5,sha1,sha256,sha512
---hash_type         : find Type of hash
---wordpress         : link the site for BruteForce
---ListPassword      : Directory For Your Password List
---ListUsername      : Directory For Your Username List
---enum              : Wordpress User Enumerate 
 
 ex:
-python3 buvulnweb.py --spider http://google.com
-python3 buvulnweb.py --dork inurl:admin/login.php --country sa --text product
-python3 buvulnweb.py --xss "paste url here"
-python3 buvulnweb.py --subdomain google.com
+python3 BlackDir.py --spider http://google.com
+python3 BlackDir.py --dork inurl:admin/login.php --country sa --text product
+python3 BlackDir.py --xss "paste url here"
+python3 BlackDir.py --sql "paste url here"
 
 
 
@@ -757,22 +747,7 @@ parser.add_argument("-list", "--list")
 parser.add_argument("-dork", "--dork")
 parser.add_argument("-country", "--country")
 parser.add_argument("-subdomain", "--subdomain")
-parser.add_argument("-xss", "--xss")
-parser.add_argument("-text", "--text")
-parser.add_argument("-sql", "--sql")
-parser.add_argument("-HTMLinj","--HTMLinj")
-parser.add_argument("-listDork", "--listDork")
-parser.add_argument("-update", "--update")
-parser.add_argument("-RevIP", "--RevIP")
-parser.add_argument("-port", "--port")
-parser.add_argument("-type","--type")
-parser.add_argument("-word","--word")
-parser.add_argument("-hash_type","--hash_type")
-parser.add_argument("-wordpress","--wordpress")
-parser.add_argument("-ListUsername","--ListUsername")
-parser.add_argument("-ListPassword","--ListPassword")
-parser.add_argument("-enum","--enum")
-args = parser.parse_args()
+
 secure = None
 listuser = args.list
 if listuser != None:
@@ -831,5 +806,5 @@ elif sql_inection == None and scanner == None and url == None and dork == None a
     hash_identifier(hash_ide)
 elif sql_inection == None and scanner == None and url == None and dork == None and subdomains == None and list_dork == None and updates == None and ip == None and portscan == None and html == None and hash_type == None and user_word == None and hash_ide == None and url_wordpress !=None:
     wordpress(url_wordpress,usernames,passwords,enumx)
-else:
     ()
+    """"
