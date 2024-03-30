@@ -56,7 +56,7 @@ def logo():
 \x1b[34m
 
  
-help: python3 BlackDir.py -h
+help: python3 Buvulnweb.py -h
                                                                                                                 
 """)
 
@@ -580,7 +580,7 @@ def scanports(ip):
 
 def update():
     os.system(
-        "cd .. && rm -rf BlackDir-Framework-New && mkdir BlackDir-Framework-New && cd BlackDir-Framework-New && git clone https://github.com/RedVirus0/BlackDir-Framework.git && echo 'New Directory >> ' && pwd")
+        "cd .. && rm -rf Buvulnweb-Framework-New && mkdir Buvulnweb-Framework-New && cd Buvulnweb-Framework-New && git clone https://github.com/RedVirus0/Buvulnweb-Framework.git && echo 'New Directory >> ' && pwd")
 
 def hash_en(word,hash_type):
     word = word.strip()
@@ -734,10 +734,10 @@ parser = argparse.ArgumentParser("""
 --xss               : Scan Site if vulnerable [Xss] url must be between double citation
 
 ex:
-python3 BlackDir.py --spider http://google.com
-python3 BlackDir.py --dork inurl:admin/login.php --country sa --text product
-python3 BlackDir.py --xss "paste url here"
-python3 BlackDir.py --sql "paste url here"
+python3 Buvulnweb.py --spider http://google.com
+python3 Buvulnweb.py --dork inurl:admin/login.php --country sa --text product
+python3 Buvulnweb.py --xss "paste url here"
+python3 Buvulnweb.py --sql "paste url here"
 
 
 
